@@ -1,0 +1,7 @@
+{
+  "name": "Centurion Garage Local Control",
+  "url": "https://github.com/yourgithubusername/CenturionGarageLocalControlHA",
+  "domain": "centurion_garage",
+  "homeassistant": "2023.1.0",
+  "render_readme": true
+}
