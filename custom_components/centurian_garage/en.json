@@ -1,0 +1,14 @@
+{
+  "title": "Centurion Garage",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Setup Centurion Garage",
+        "data": {
+          "local_ip": "Local IP Address",
+          "api_key": "API Key"
+        }
+      }
+    }
+  }
+}
