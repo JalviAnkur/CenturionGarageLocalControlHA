@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Centurion Garage Setup",
+        "description": "Enter the Local IP and API key for your Centurion Garage Door.",
+        "data": {
+          "local_ip": "Garage Door IP Address",
+          "api_key": "API Key"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "description": "Modify the settings."
+      }
+    }
+  }
+}
