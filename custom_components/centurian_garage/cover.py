@@ -1,6 +1,15 @@
 import requests
 from homeassistant.components.cover import CoverEntity, SUPPORT_OPEN, SUPPORT_CLOSE, SUPPORT_STOP
+from homeassistant.config_entries import ConfigEntry
+from homeassistant.core import HomeAssistant
+from homeassistant.helpers.entity_platform import AddEntitiesCallback
+
 from . import DOMAIN
+
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_entities: AddEntitiesCallback):
+    """Set up Centurion Garage Door cover entity from a config entry."""
+    data = hass.data[DOMAIN][entry.entry_id]
+    async_add_entities([CenturionGarageDoor(data["local_ip"], data["api_key"])])
 
 class CenturionGarageDoor(CoverEntity):
     """Representation of a Centurion Garage Door."""
