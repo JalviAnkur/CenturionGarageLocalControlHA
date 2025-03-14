@@ -1,7 +1,7 @@
 {
   "domain": "centurion_garage",
   "name": "Centurion Garage Door",
-  "version": "1.0.1",
+  "version": "v1.0.1",
   "requirements": [],
   "codeowners": ["@JalviAnkur"],
   "config_flow": true,
